@@ -6,6 +6,8 @@
 
 package basictempconvert;
 
+import java.util.Scanner;
+
 /**
  *
  * @author IstipanyaGrasya
@@ -17,6 +19,17 @@ public class BasicTempConvert {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String baseTemp;
+        double temp;
+        double answer;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Choose Base Temperature: ");
+        System.out.println("A: Celcius");
+        System.out.println("B: Fahrenhiet");
+
+        baseTemp = input.next();
     }
     
 }
