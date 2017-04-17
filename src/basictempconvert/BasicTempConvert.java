@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package basictempconvert;
 
 import java.util.Scanner;
@@ -30,10 +29,21 @@ public class BasicTempConvert {
         System.out.println("B: Fahrenhiet");
 
         baseTemp = input.next();
-        
+
         Scanner input2 = new Scanner(System.in);
         System.out.println("Enter Temperature: ");
         temp = input2.nextInt();
+
+        switch (baseTemp) {
+            case "A":
+                answer = (((temp * 9) / 5) + 32);
+                System.out.println(temp + " Celcius = " + answer + " Fahrenheit");
+                break;
+            case "a":
+                answer = (((temp * 9) / 5) + 32);
+                System.out.println(temp + " Celcius = " + answer + " Fahrenheit");
+                break;
+        }
+
     }
-    
 }
